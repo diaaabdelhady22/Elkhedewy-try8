@@ -1,0 +1,473 @@
+body {
+    background-color: #030303;
+    color: white;
+    text-align: center;
+    font-family: "Lateef", serif;
+    font-weight: 900;
+    font-style: normal;
+    border: none;
+}
+
+.box {
+    background-color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 170px;
+    position: fixed;
+    display: flex;
+    color: black;
+}
+
+.box2 {
+    position: fixed;
+    right: 150;
+    font-size: 80px;
+    top: 20;
+    font-family: "Lateef", serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+#b1 {
+    width: 100%;
+    height: 200px;
+    background-color: wight;
+    border-radius: 60px;
+    font-size: 100px;
+    font-family: "Lateef", serif;
+    font-weight: 900;
+    font-style: normal;
+    border: none;
+    transition: 0.5s;
+}
+
+#ff {
+    border-radius: 1000px;
+}
+
+#b1:hover {
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+    height: 220px;
+    border-radius: 30px;
+}
+
+/* particles */
+.particles{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.particles span{
+    position: absolute;
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: white;
+    border-radius: 50%;
+    opacity: 0.3;
+    animation: move 10s linear infinite;
+}
+
+@keyframes move{
+    0%{
+        transform: translateY(100vh) scale(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        transform: translateY(-10vh) scale(1);
+        opacity: 0;
+    }
+}
+
+.particles span:nth-child(1){left:10%; animation-duration:7s;}
+.particles span:nth-child(2){left:20%; animation-duration:9s;}
+.particles span:nth-child(3){left:30%; animation-duration:6s;}
+.particles span:nth-child(4){left:40%; animation-duration:8s;}
+.particles span:nth-child(5){left:50%; animation-duration:10s;}
+.particles span:nth-child(6){left:60%; animation-duration:7s;}
+.particles span:nth-child(7){left:70%; animation-duration:9s;}
+.particles span:nth-child(8){left:80%; animation-duration:6s;}
+.particles span:nth-child(9){left:90%; animation-duration:8s;}
+.particles span:nth-child(10){left:95%; animation-duration:11s;}
+
+.box4 {
+    right: 20;
+    position: fixed;
+    top: 30;
+}
+
+.ss {
+    font-size: 100px;
+    text-align: right;
+    background-color: white;
+    color: black;
+    width: 50%;
+    align: right;
+    margin-left: auto;
+    border-radius: 20px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: -1000;
+    bottom: 0;
+    border-color: black;
+    
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: 0.5s;
+    border: 5px solid black;
+}
+
+#jj {
+    height: 5px;
+    background-color: black;
+    border: none;
+}
+
+#kk {
+    background: none;
+    border: none;
+}
+
+#closeSS {
+    display: block;
+    margin: auto;
+    position: fixed;
+    cursor: pointer;
+    width: 70px;
+    top: 60;
+    left: 55%;
+    transition: 1s;
+}
+#text {
+    width: 100%;
+    height: 200px;
+    bacbackground-color: white;
+    color: black;
+    border: none;
+    border-radius: 60px;
+    font-size: 150px;
+    font-family: "Lateef", serif;
+    font-weight: 900;
+    font-style: normal;
+    border: none;
+    text-align: center;
+}
+
+#bb {
+    width: 50%;
+    height: 200px;
+    background-color: wight;
+    border-radius: 60px;
+    font-size: 100px;
+    font-family: "Lateef", serif;
+    font-weight: 900;
+    font-style: normal;
+    border: none;
+    transition: 0.5s;
+}
+
+.name {
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    color: black;
+    font-size: 150px;
+    border-radius: 60px;
+}
+
+#bb:hover {
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+    height: 200px;
+    border-radius: 30px;
+    width: 100%;
+} 
+/* عنوان القائمة */
+
+.ssTitle{
+    font-size:90px;
+    margin-top:140px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:20px;
+}
+
+/* أزرار الصفحات */
+
+.menuBtn{
+    width:90%;
+    height:120px;
+    border:none;
+    border-radius:35px;
+    margin-top:25px;
+    font-size:60px;
+    font-family: "Lateef", serif;
+    background:black;
+    color:white;
+    transition:0.3s;
+}
+
+.menuBtn:hover{
+    background:#333;
+    transform:scale(1.03);
+}
+
+.menuBtn .material-icons{
+    font-size:60px;
+    vertical-align:middle;
+    margin-left:10px;
+}
+
+/* صفحة الإعدادات */
+
+#settingsPage{
+    display:none;
+}
+
+/* كل إعداد */
+
+.setting{
+    width:90%;
+    height:120px;
+    background:black;
+    color:white;
+    margin:auto;
+    margin-top:25px;
+    border-radius:35px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding-right:30px;
+    padding-left:30px;
+    font-size:55px;
+    box-sizing:border-box;
+}
+
+.setting .material-icons{
+    font-size:60px;
+    margin-left:15px;
+    vertical-align:middle;
+}
+
+/* السويتش */
+
+.switch{
+    position:relative;
+    display:inline-block;
+    width:110px;
+    height:55px;
+}
+
+.switch input{
+    opacity:0;
+    width:0;
+    height:0;
+}
+
+.slider{
+    position:absolute;
+    cursor:pointer;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:#777;
+    transition:.4s;
+    border-radius:50px;
+}
+
+.slider:before{
+    position:absolute;
+    content:"";
+    height:45px;
+    width:45px;
+    left:5px;
+    bottom:5px;
+    background:white;
+    transition:.4s;
+    border-radius:50%;
+}
+
+input:checked + .slider{
+    background:#00ff88;
+}
+
+input:checked + .slider:before{
+    transform:translateX(55px);
+}
+
+/* زر الرجوع */
+
+#backBtn{
+    width:90%;
+    height:120px;
+    border:none;
+    border-radius:35px;
+    margin-top:40px;
+    background:white;
+    color:black;
+    font-size:60px;
+    font-family: "Lateef", serif;
+    transition:0.3s;
+}
+
+#backBtn:hover{
+    background:black;
+    color:white;
+}
+
+#backBtn .material-icons{
+    font-size:60px;
+    vertical-align:middle;
+}
+
+/* تحسين شكل الايقونات */
+
+.material-icons{
+    vertical-align:middle;
+}
+
+/* سكرول ناعم */
+
+.ss::-webkit-scrollbar{
+    width:10px;
+}
+
+.ss::-webkit-scrollbar-thumb{
+    background:black;
+    border-radius:20px;
+}
+/* تخلي الـ ss responsive */
+
+.ss{
+    width:85% !important;
+    max-width:500px;
+    height:100vh;
+    overflow-y:auto;
+    box-sizing:border-box;
+    padding:20px;
+}
+
+/* موبايلات صغيرة */
+
+@media(max-width:600px){
+
+    .ss{
+        width:100% !important;
+        border-radius:0;
+    }
+
+}
+
+/* تحسين شكل الإعداد */
+
+.setting{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+/* الوضع الليلي */
+
+.darkMode{
+    background:white !important;
+    color:black !important;
+}
+
+/* إيقاف الأنيميشن */
+
+.stopAnimation *{
+    animation:none !important;
+    transition:none !important;
+}
+
+/* كتم الأصوات */
+
+.mute audio,
+.mute video{
+    volume:0;
+}
+
+/* تكبير الخط */
+
+.bigText{
+    font-size:120% !important;
+}
+
+/* إخفاء الجزيئات */
+
+.hideParticles .particles{
+    display:none !important;
+}
+/* Firebase Cards */
+
+.dynamicButtons{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+    margin-top:50px;
+    padding:20px;
+}
+
+.card{
+    width:100%;
+    background:#111;
+    border-radius:40px;
+    overflow:hidden;
+    transition:0.3s;
+    box-shadow:0 0 20px rgba(0,0,0,0.5);
+}
+
+.card:hover{
+    
+    
+}
+
+.card img{
+    width:100%;
+    object-fit:cover;
+    
+}
+
+.card h2{
+    font-size:70px;
+    color:white;
+    margin-top:10px;
+}
+
+.card button{
+    width:80%;
+    height:90px;
+    border:none;
+    border-radius:25px;
+    margin-bottom:30px;
+    background:white;
+    color:black;
+    font-size:45px;
+    font-family:"Lateef", serif;
+    transition:0.3s;
+}
+
+.card button:hover{
+    background:#00bfff;
+    color:white;
+}

@@ -1,0 +1,459 @@
+  <html>
+
+<head>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Lateef:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- particles -->
+
+<div class="particles">
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+</div>
+
+<!-- top box -->
+
+<div class="box">  
+
+    <img src="logow.png" width="300px" id="gg">
+
+    <div class="box4">  
+
+        <button id="kk">
+            <img src="more.png" width="100px">
+        </button>
+
+    </div>
+
+    <div class="box2">  
+        أ/حمدي دراز
+    </div>
+
+</div>
+
+<!-- القائمة -->
+
+<div class="ss" align="right">
+
+    <img src="none.png" id="closeSS">
+
+    <!-- الصفحة الرئيسية -->
+
+    <div id="mainPage">
+
+        <div class="ssTitle">
+
+            <span class="material-icons">dashboard</span>
+
+            صفحاتنا
+
+        </div>
+
+        <hr id="jj">
+
+        <button class="menuBtn">
+
+            <span class="material-icons">smart_display</span>
+
+            يوتيوب
+
+        </button>
+
+        <button class="menuBtn">
+
+            <span class="material-icons">photo_camera</span>
+
+            انستجرام
+
+        </button>
+
+        <button class="menuBtn">
+
+            <span class="material-icons">groups</span>
+
+            جروباتنا
+
+        </button>
+
+        <button class="menuBtn">
+
+            <span class="material-icons">school</span>
+
+            المنصة
+
+        </button>
+
+        <button class="menuBtn" id="openSettings">
+
+            <span class="material-icons">settings</span>
+
+            الإعدادات
+
+        </button>
+
+    </div>
+
+    <!-- صفحة الإعدادات -->
+
+    <div id="settingsPage">
+
+        <div class="ssTitle">
+
+            <span class="material-icons">settings</span>
+
+            الإعدادات
+
+        </div>
+
+        <hr id="jj">
+
+        <!-- dark mode -->
+
+        <div class="setting">
+
+            <div>
+
+                <span class="material-icons">dark_mode</span>
+
+                ليلي
+
+            </div>
+
+            <label class="switch">
+
+                <input type="checkbox" id="darkMode">
+
+                <span class="slider"></span>
+
+            </label>
+
+        </div>
+
+        <!-- sounds -->
+
+        <div class="setting">
+
+            <div>
+
+                <span class="material-icons">volume_up</span>
+
+                الأصوات
+
+            </div>
+
+            <label class="switch">
+
+                <input type="checkbox" id="soundToggle">
+
+                <span class="slider"></span>
+
+            </label>
+
+        </div>
+
+        <!-- animations -->
+
+        <div class="setting">
+
+            <div>
+
+                <span class="material-icons">animation</span>
+
+                الأنيميشن
+
+            </div>
+
+            <label class="switch">
+
+                <input type="checkbox" id="animationToggle" checked>
+
+                <span class="slider"></span>
+
+            </label>
+
+        </div>
+
+        <!-- notifications -->
+
+        <div class="setting">
+
+            <div>
+
+                <span class="material-icons">notifications</span>
+
+                الإشعارات
+
+            </div>
+
+            <label class="switch">
+
+                <input type="checkbox" id="notificationToggle">
+
+                <span class="slider"></span>
+
+            </label>
+
+        </div>
+
+        <!-- particles -->
+
+        <div class="setting">
+
+            <div>
+
+                <span class="material-icons">blur_on</span>
+
+                الجزيئات
+
+            </div>
+
+            <label class="switch">
+
+                <input type="checkbox" id="particlesToggle">
+
+                <span class="slider"></span>
+
+            </label>
+
+        </div>
+
+        <!-- font -->
+
+        <div class="setting">
+
+            <div>
+
+                <span class="material-icons">format_size</span>
+
+                خط أكبر
+
+            </div>
+
+            <label class="switch">
+
+                <input type="checkbox" id="fontToggle">
+
+                <span class="slider"></span>
+
+            </label>
+
+        </div>
+
+        <!-- رجوع -->
+
+        <button id="backBtn">
+
+            <span class="material-icons">arrow_back</span>
+
+            رجوع
+
+        </button>
+
+    </div>
+
+</div>
+
+       <body>
+    <div class="particles">  
+        <span></span><span></span><span></span><span></span><span></span>  
+        <span></span><span></span><span></span><span></span><span></span>  
+    </div>  
+  </div>
+  </div>
+    <center>  
+        <br><br><br>  
+  
+        <img src="logob.png" width="100%">  
+  
+        <input type="text" id="text" placeholder="ادخل الكود">  
+  
+        <br><br>  
+  
+       <br><br><br><br>  
+  
+        <input type="button" value="تأكيد" id="bb" onclick="go()">  
+  
+        <br><br><br><br><br>  
+          
+    </center>  
+  </body>
+<script>  
+function go() {  
+  
+    const code = document.getElementById('text').value.trim();  
+  
+    if(code) {  
+  
+        window.location.href =  
+        "loading2.html?code=" + encodeURIComponent(code);  
+  
+    } else {  
+  
+        alert('please enter your code');  
+  
+    }  
+}  
+</script>  
+  
+  
+<script>  
+let ss = document.querySelector(".ss");  
+let openBtn = document.getElementById("kk");  
+let closeBtn = document.getElementById("closeSS");  
+  
+openBtn.addEventListener("click", function () {  
+    ss.style.opacity = "1";  
+    ss.style.visibility = "visible";  
+    ss.style.right="0";  
+});  
+  
+closeBtn.addEventListener("click", function () {  
+    ss.style.opacity = "0";  
+    ss.style.visibility = "hidden";  
+    ss.style.right="-1000";  
+});  
+/* فتح الإعدادات */
+
+document.getElementById("openSettings").onclick = function(){
+
+    document.getElementById("mainPage").style.display = "none";
+
+    document.getElementById("settingsPage").style.display = "block";
+
+};
+
+/* رجوع */
+
+document.getElementById("backBtn").onclick = function(){
+
+    document.getElementById("settingsPage").style.display = "none";
+
+    document.getElementById("mainPage").style.display = "block";
+
+};
+
+/* الوضع الليلي */
+
+document.getElementById("darkMode").onchange = function(){
+
+    if(this.checked){
+
+        document.body.style.background = "white";
+
+        document.body.style.color = "black";
+
+    }else{
+
+        document.body.style.background = "#030303";
+
+        document.body.style.color = "white";
+
+    }
+
+};
+
+/* إيقاف الأنيميشن */
+
+document.getElementById("animationToggle").onchange = function(){
+
+    let all = document.querySelectorAll("*");
+
+    if(this.checked){
+
+        all.forEach(function(el){
+
+            el.style.animationPlayState = "running";
+
+        });
+
+    }else{
+
+        all.forEach(function(el){
+
+            el.style.animationPlayState = "paused";
+
+        });
+
+    }
+
+};
+
+/* particles */
+
+document.getElementById("particlesToggle").onchange = function(){
+
+    let particles = document.querySelector(".particles");
+
+    if(this.checked){
+
+        particles.style.display = "none";
+
+    }else{
+
+        particles.style.display = "block";
+
+    }
+
+};
+
+/* تكبير الخط */
+
+document.getElementById("fontToggle").onchange = function(){
+
+    if(this.checked){
+
+        document.body.style.zoom = "110%";
+
+    }else{
+
+        document.body.style.zoom = "100%";
+
+    }
+
+};
+
+/* الأصوات */
+
+document.getElementById("soundToggle").onchange = function(){
+
+    let media = document.querySelectorAll("audio,video");
+
+    media.forEach(function(item){
+
+        item.muted = !item.muted;
+
+    });
+
+};
+
+/* الإشعارات */
+
+document.getElementById("notificationToggle").onchange = function(){
+
+    if(this.checked){
+
+        alert("تم تشغيل الإشعارات");
+
+    }else{
+
+        alert("تم إيقاف الإشعارات");
+
+    }
+
+};
+
+</script>  
+  
+    </body>  
+</html>
